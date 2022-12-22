@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class = "content">
+    <h2>以下のアンケートに答えてください！</h2>
+     <form method="POST" action="/show">
+        <div>
+            <h3>誰と旅行に行きたい？</h3>
+            <input type="radio" id="char1" value ="家族" name="character">
+            <label for="character">家族</label>
+            <input type="radio" id="char2" value ="友達" name="character">
+            <label for="character">友達</label>
+            <input type="radio" id="char3" value ="恋人" name="character">
+            <label for="character">恋人</label>
+            <input type="radio" id="char4" value ="ひとり" name="character">
+            <label for="character">ひとり</label>
+            <input type="radio" id="char5" value ="男友達" name="character">
+            <label for="character">男友達</label>
+            <input type="radio" id="char6" value ="女友達" name="character">
+            <label for="character">女友達</label>
+        </div>
+
+        <div>
+            <h3>旅行先に求めるものは？</h3>
+            <input type="radio" id="ideal1" value ="温泉" name="ideal">
+            <label for="ideal">温泉</label>
+            <input type="radio" id="ideal2" value ="景色" name="ideal">
+            <label for="ideal">絶景</label>
+            <input type="radio" id="ideal3" value ="食事" name="ideal">
+            <label for="ideal">食事</label>
+            <input type="radio" id="idea4l" value ="アクティビティ" name="ideal">
+            <label for="ideal">アクティビティ</label>
+            <input type="radio" id="ideal5" value ="歴史" name="ideal">
+            <label for="ideal">歴史</label>
+            <input type="radio" id="ideal6" value ="山" name="ideal">
+            <label for="ideal">山</label>
+            <input type="radio" id="ideal7" value ="海" name="ideal">
+            <label for="ideal">海</label>
+            <input type="radio" id="ideal8" value="水族館" name="ideal">
+            <label for="ideal">水族館</label>
+        </div>
+
+        <div>
+            <h3>どんな旅行をしたい？</h3>
+            <input type="radio" id="feeling1" value ="楽しい" name="feeling">
+            <label for="feeling">楽しい</label>
+            <input type="radio" id="feeling2" value ="美味しい" name="feeling">
+            <label for="feeling">美味しい</label>
+            <input type="radio" id="feeling3" value ="綺麗" name="feeling">
+            <label for="feeling">綺麗</label>
+            <input type="radio" id="feeling4" value ="壮大" name="feeling">
+            <label for="feeling">壮大</label>
+            <input type="radio" id="feeling5" value ="ロマンチック" name="feeling">
+            <label for="feeling">ロマンチック</label>
+            <input type="radio" id="feeling6" value ="おしゃれ" name="feeling">
+            <label for="feeling">おしゃれ</label>
+        </div>
+
+        <div>
+            <h3>以下のキーワードのどれに惹かれますか？</h3>
+            <input type="radio" id="keyword1" value ="有名" name="keyword">
+            <label for="keyword">有名</label>
+            <input type="radio" id="keyword2" value ="パワースポット" name="keyword">
+            <label for="keyword">パワースポット</label>
+            <input type="radio" id="keyword"3 value ="神社" name="keyword">
+            <label for="keyword">神社</label>
+            <input type="radio" id="keyword4" value ="紅葉" name="keyword">
+            <label for="keyword">紅葉</label>
+            <input type="radio" id="keyword5" value ="ドライブ" name="keyword">
+            <label for="keyword">ドライブ</label>
+        </div>
+        
+        <div class="button">
+            <button type="submit",value="診断">診断</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

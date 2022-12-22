@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class = "content">
+    <div class="result">
+        <h2>診断結果</h2>
+        <h1>あなたにおすすめの都道府県は...
+            <a href="/search"><span>{{ max_lang }}</span></a>
+        </h1>
+        <h1>あなたの意外とおすすめの都道府県は...
+            <a href="/search"><span>{{ min_lang }}</span></a>
+            </h1>
+        <div class="click_btn2">
+            <a href="/new">もう一度診断してみる</a>
+        </div>
+    </div>
+    </div>
+{% endblock %}

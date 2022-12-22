@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIで旅行先診断</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <nav class="menu">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/new">SERVICES</a></li>
+                    <li><a href="/search">SEARCH</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="title">
+            <div class="title-container">
+                <div class="title-name">
+                    <a href="/"><h1>AIで旅行先診断</h1></a>
+                    <h4>あなたへのおすすめと意外な旅行先を見つけてもらおう</h4>
+                </div>
+            </div>
+        </div>
+
+
+
+        {% block content %}
+        {% endblock %}
+
+        <footer>
+            <div class="footer_logo">©︎ GeekSalon_AI
+            </div>
+        </footer>
+    </div>
+    </body>
+    </html>

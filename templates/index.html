@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<main>
+    <h2 id="title">このサイトではAIを使ってあなたにオススメの旅行先を診断します!</h2>
+    <div id="page-explain" class="page-explain">
+        <div class="contents-left">
+            <div class="page-explain-comment">
+                <h3>旅行先を決めるとき、どこに行くか悩んだことはありませんか？</h3>
+            </div>
+        </div>
+        <div class="contents-right">
+            <div class="page-explain-illust">
+                <img src="../static/images/地球儀イラスト.jpg" alt="悩む">
+            </div>
+        </div>
+
+        <div class="contents-left">
+            <div class="page-explain-illust">
+                <img src="../static/images/探す.jpg" alt="探す">
+            </div>
+        </div>
+        <div class="contents-right">
+            <div class="page-explain-comment">
+                <h3>そんなあなたにピッタリの都道府県をAIが探してくれます！！</h3>
+            </div>
+        </div>
+
+        <div class="contents-left">
+            <div class="page-explain-comment">
+                <h3>さらに！<br>意外な旅行先もAIが一緒に提案してくれます</h3>
+            </div>
+        </div>
+        <div class="contents-right">
+            <div class="page-explain-illust">
+                <img src="../static/images/勧誘イラスト.jpg" alt="勧誘">
+            </div>
+        </div>
+
+        <div class="contents-left">
+            <div class="page-explain-illust">
+                <img src="../static/images/温泉イラスト.jpg" alt="温泉">
+            </div>
+        </div>
+        <div class="contents-right">
+            <div class="page-explain-comment">
+                <h3>AIの力を借りて素敵な旅行へ行こう！</h3>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div class="click_btn"><a href="/new">診断スタート</a>
+    </div>
+</main>
+
+{% endblock %}
